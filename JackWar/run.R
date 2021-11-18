@@ -76,7 +76,9 @@ isThisAVictory <- function(h, d){
 ## PLAY SEVERAL TIMES
 for(i in 1:max_tries){
   
-
+# since only 1 deck is available, every round needs a new deck
+newDeck()
+  
 # MONEY RELATED
 myBalance <- myOriginalBalance
 myBet <- myInitialBet
