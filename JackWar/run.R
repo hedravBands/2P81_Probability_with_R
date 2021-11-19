@@ -16,10 +16,13 @@ results     <- c(1:28)*0  #histogram using indexes as results: where 10 is even,
 
 
 # Balance:
-myGrandBalance <- 1000
+myGrandBalance    <- 0
+myOriginalBalance <- 0
+myOriginalTieBet  <- 0
+myOriginalBet     <- 2
 
 # Strategy
-onTieDifference <- 8
+onTieDifference   <- 8
 
 ###############
 
@@ -75,7 +78,7 @@ WorkingDeck <- newDeck()
 
 # MONEY RELATED
 myBalance   <- myOriginalBalance
-myBet       <- myInitialBet
+myBet       <- myOriginalBet
 myTieBet    <- myOriginalTieBet
 
 # GET INITIAL CARDS
@@ -170,6 +173,8 @@ else{
 }
 } # end for-loop
 
+winPerGame = myGrandBalance/max_tries
+
 #############
 
 total_win  
@@ -181,11 +186,40 @@ total_win2
 total_lose2 
 total_tie2  
 myGrandBalance
+winPerGame
 
 
 results
 
 ###############
 
+# 
+# total_win  
+# [1] 463540
+# > total_lose  
+# [1] 465003
+# > total_tie  
+# [1] 71457
+# > total_war   
+# [1] 30
+# > total_nowar 
+# [1] 32
+# > total_win2  
+# [1] 10
+# > total_lose2 
+# [1] 16
+# > total_tie2  
+# [1] 4
+# > myGrandBalance
+# [1] 1539930
+# > winPerGame
+# [1] 1.53993
+# > 
+#   > 
+#   > results
+# [1]      0   5990      0 317125      0 141936      0      0      0      0      0  78228      0     10      0 379512      0   5804      0      0      0
+# [22]      0      0      0      0  46542      0  24853
+# > 
+#   > ###############
 
 
