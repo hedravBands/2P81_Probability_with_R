@@ -1,5 +1,5 @@
 # Double-War Data Generator
-
+# Note: time to run 10^6 round is about 1min
 
 # Global variables
 max_tries   <- 10^6
